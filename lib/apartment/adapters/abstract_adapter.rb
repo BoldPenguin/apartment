@@ -143,7 +143,7 @@ module Apartment
         end
 
         Thread.current[:_apartment_connection_specification_name] = config[:name]
-        Apartment.connection_class.connection_specification_name = config[:name]
+        Apartment.connection_class.connection_specification_name = nil
         simple_switch(config)
       end
 
